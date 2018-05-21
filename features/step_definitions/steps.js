@@ -33,7 +33,7 @@ Given('a station is configured', function () {
   this.radio.setStationUrls([stations[this.theStationName]])
 })
 
-Given('two stations are configured:', async function (dataTable) {
+Given('these stations are configured:', async function (dataTable) {
   const stationNames = dataTable.raw().map(row => row[0])
   const stationUrls = stationNames.map(name => stations[name])
   this.radio.setStationUrls(stationUrls)
