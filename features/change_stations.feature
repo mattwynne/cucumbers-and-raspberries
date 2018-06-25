@@ -7,3 +7,5 @@ Feature: Change stations
     When the radio is turned on
     And the station is changed
     Then BBC Radio 6 Music should be playing
+    When the station is changed
+    Then BBC Radio 4 should be playing
