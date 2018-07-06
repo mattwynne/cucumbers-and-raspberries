@@ -1,6 +1,8 @@
 # cucumbers-and-raspberries
 
-At Christmas, my lovely wife asked for a radio that had "one button". She likes simplicity.
+At Christmas, my lovely wife asked for a radio that had "one button".
+
+She likes simplicity.
 
 So, inspired by [this guide](http://www.suppertime.co.uk/blogmywiki/piradio/) my 8-year old and I got a Raspberry Pi and a couple of other bits, and built this:
 
