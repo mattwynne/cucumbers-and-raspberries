@@ -65,8 +65,12 @@ When('the radio is turned off', function () {
   this.radio.off()
 })
 
-When('the volume is increased', function () {
-  this.increaseVolume(this)
+When('the volume is increased', async function () {
+  await this.increaseVolume(this)
+})
+
+When('the volume is decreased', async function () {
+  await this.decreaseVolume(this)
 })
 
 Then('the station should be playing', async function () {
