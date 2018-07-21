@@ -44,6 +44,15 @@ Given('the radio has been turned on', async function () {
   await this.assertCurrentlyPlaying({ expectedStationName: this.theStationName, ...this })
 })
 
+Given('the volume is {int}%', function (volume) {
+  this.player.setVolume(volume)
+})
+
+Given('the radio is playing', function () {
+  this.radio.setStationUrls([stations["BBC Radio 4"]])
+  this.radio.on()
+})
+
 When('the radio is turned on', function () {
   this.radio.on()
 })
@@ -56,6 +65,10 @@ When('the radio is turned off', function () {
   this.radio.off()
 })
 
+When('the volume is increased', function () {
+  this.increaseVolume(this)
+})
+
 Then('the station should be playing', async function () {
   await this.assertCurrentlyPlaying({ expectedStationName: this.theStationName, ...this })
 })
@@ -66,6 +79,10 @@ Then('{stationName} should be playing', async function (stationName) {
 
 Then('nothing should be playing', async function () {
   await this.assertCurrentlyPlaying({ expectedStationName: "nothing", ...this })
+})
+
+Then('the volume should be {int}%', async function (volume) {
+  await this.assertVolumeIs({ volume, ...this })
 })
 
 After(async function () {
