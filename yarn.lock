@@ -412,9 +412,9 @@ once@^1.3.0:
   dependencies:
     wrappy "1"
 
-onoff-rotary@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/onoff-rotary/-/onoff-rotary-1.0.0.tgz#c24f0bd8829a2c5b3f236928e536f7ad7e9a0246"
+"onoff-rotary@https://github.com/Saiyato/onoff-rotary.git":
+  version "0.2.1"
+  resolved "https://github.com/Saiyato/onoff-rotary.git#2336ea47d95ab57ab1091e429db9dd4930abbfaf"
   dependencies:
     onoff "^1.1.1"
 

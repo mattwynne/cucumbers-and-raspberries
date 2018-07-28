@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "onoff": "^3.0.2",
-    "onoff-rotary": "^1.0.0"
+    "onoff-rotary": "https://github.com/Saiyato/onoff-rotary.git"
   },
   "devDependencies": {
     "cucumber": "^4.2.1",
