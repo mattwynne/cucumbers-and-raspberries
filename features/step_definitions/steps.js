@@ -73,6 +73,14 @@ When('the volume is decreased', async function () {
   await this.decreaseVolume(this)
 })
 
+When('the volume is muted', async function () {
+  await this.muteVolume(this)
+})
+
+When('the volume is un-muted', async function () {
+  await this.muteVolume(this)
+})
+
 Then('the station should be playing', async function () {
   await this.assertCurrentlyPlaying({ expectedStationName: this.theStationName, ...this })
 })
